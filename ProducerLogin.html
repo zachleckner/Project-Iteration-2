@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Radio</title>
+    <link rel="stylesheet" href="group03.css">
+    <style>
+      .error-msg {
+          display: none;
+          color: red;
+          
+      }
+
+      .login-container form:invalid .error-msg {
+          display: block;
+      }
+  </style>    
+    
+</head>
+<body>
+    <div class="top-row">. Indian Radio Manager</div>
+    <div class="container">
+        <div class="column">
+            <a href="CommonPage.html" class="row homeBack center"><div>Home</div></a>
+            <a href="CommonPage.html" class="row homeBack center"><div>Back</div></a>
+            <div class="row center">Manager</div>
+            <a href="ProducerLogin.html" class="row center"><div>Producer</div></a>
+            <div class="row center">DJ</div>
+        </div>
+        <div class="column">
+            <div class="row title"></div>
+            <div class="row"></div>
+        </div>
+        <div class="column">
+            <div class="row title center">Producer Login</div>
+            <div class="login-container row center">
+              <form action="Producer.html">
+                  <table style="border: 1px solid #000; width: 100%; padding: 15px; background-color: #201E1E;">
+                      <tr>
+                          <td>Producer ID:</td>
+                          <td><input type="text" name="producerID" id="producerID" style="width: 100%;" required></td>
+                      </tr>
+                      <tr>
+                          <td>Password:</td>
+                          <td><input type="password" name="password" id="password" style="width: 100%;" required></td>
+                      </tr>
+                      <tr>
+                          <td colspan="2" class="error-msg" style="width: 100%;">ID or Password not completed</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2" style="width: 100%;"><button type="submit" style="width: 100%;">Submit</button></td>
+                      </tr>
+                  </table>
+              </form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
